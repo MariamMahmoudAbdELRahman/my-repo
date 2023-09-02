@@ -1,13 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    int count;
+int main()
+{
+    int choice;
 
-    for (count = 5; count >= 1; count = count - 1) {
-        printf("%d\n", count);
+    printf("enter your tasks");
+    scanf("%s",choice);
+
+    switch(choice)
+    {
+
+    case 1:
+        printf("\nadd task");
+        break;
+
+    case 2:
+        printf("\nview task");
+        break;
+
+    case 3:
+        printf("\nremove task");
+        break;
+
+    default:
+            printf("exit the program");
+            break;
+
     }
-    printf("Blast off to the moon!\n");
-
-    return 0;
 }
